@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#14103d" />
+    <meta name="color-scheme" content="light" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="description" content="PPAI 学习工作台：多领域学习问答、Python 沙箱调试与可追溯的回答。" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2314103d'/%3E%3Cpath d='M10 23V9h6.5a4.5 4.5 0 0 1 0 9H10' fill='none' stroke='%23c6f432' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>PPAI 学习工作台 · 在线体验</title>
+  </head>
+  <body>
+    <a class="skip" href="#main">跳到主要内容</a>
+
+    <header class="topbar">
+      <div class="wrap topbar-inner">
+        <span class="brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="28" height="28">
+              <rect width="32" height="32" rx="8" fill="#c6f432" />
+              <path d="M10 23V9h6.5a4.5 4.5 0 0 1 0 9H10" fill="none" stroke="#14103d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+          PPAI 学习工作台
+        </span>
+        <span class="topbar-tag">公开预览</span>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="wrap hero-inner">
+          <div class="hero-copy">
+            <p class="kicker">多领域学习 · Python 调试</p>
+            <h1 id="hero-title">把不懂的地方，<br />一步步弄明白。</h1>
+            <p class="lede">
+              数学、科学、医学课程或编程概念都可以提问；Python 程序出错时，贴上代码和样例，助教会先在隔离环境里实际运行，再带你找到原因。
+            </p>
+            <div class="cta-row">
+              <a id="cta-enter" class="btn btn-lime is-disabled" aria-disabled="true" rel="noopener noreferrer">
+                进入在线体验
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+              <a class="btn btn-ghost" href="#features">先了解功能</a>
+            </div>
+            <p id="cta-note" class="cta-note" role="status" aria-live="polite">正在读取体验地址…</p>
+          </div>
+
+          <div class="hero-art" aria-hidden="true">
+            <svg viewBox="0 0 320 260" width="100%" height="100%">
+              <defs>
+                <linearGradient id="g-card" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#2c2678" />
+                  <stop offset="1" stop-color="#1f1a5c" />
+                </linearGradient>
+              </defs>
+              <circle cx="250" cy="52" r="34" fill="#c6f432" opacity="0.9" />
+              <circle cx="48" cy="214" r="22" fill="#3d6bff" opacity="0.55" />
+              <rect x="34" y="40" width="236" height="168" rx="20" fill="url(#g-card)" stroke="#3d3a8f" stroke-width="2" />
+              <circle cx="58" cy="62" r="5" fill="#ff8a7a" />
+              <circle cx="74" cy="62" r="5" fill="#ffd36b" />
+              <circle cx="90" cy="62" r="5" fill="#c6f432" />
+              <rect x="56" y="86" width="120" height="10" rx="5" fill="#7b5cff" />
+              <rect x="56" y="106" width="176" height="10" rx="5" fill="#4a44a3" />
+              <rect x="72" y="126" width="140" height="10" rx="5" fill="#4a44a3" />
+              <rect x="72" y="146" width="96" height="10" rx="5" fill="#3d6bff" />
+              <rect x="56" y="172" width="78" height="20" rx="10" fill="#c6f432" />
+              <path d="M66 182l5 5 9-10" fill="none" stroke="#14103d" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+              <text x="88" y="187" font-size="11" font-weight="700" fill="#14103d" font-family="system-ui, sans-serif">样例通过</text>
+              <rect x="196" y="160" width="96" height="70" rx="16" fill="#ffffff" stroke="#e1e0f0" stroke-width="2" />
+              <text x="244" y="192" text-anchor="middle" font-size="20" font-weight="700" fill="#17143a" font-family="Georgia, serif">∑ n</text>
+              <text x="244" y="214" text-anchor="middle" font-size="10" fill="#6c6a8c" font-family="system-ui, sans-serif">分步讲解</text>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section" aria-labelledby="features-title">
+        <div class="wrap">
+          <h2 id="features-title" class="section-title">你可以用它做什么</h2>
+          <ul class="features">
+            <li class="feature">
+              <span class="feature-icon fi-blue" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5zM4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" /></svg>
+              </span>
+              <h3>多领域学习问答</h3>
+              <p>选择通识、数学、科学、医学课程或编程概念等学习情境，写下问题和学习目标，按入门或进阶深度获得分步讲解，数学公式会正常排版。</p>
+              <p class="feature-foot">医学内容仅用于课程学习，不提供个人诊疗建议。</p>
+            </li>
+            <li class="feature">
+              <span class="feature-icon fi-lime" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13.5 6l-3 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              </span>
+              <h3>Python 沙箱调试</h3>
+              <p>贴上代码，填写输入与期望输出。原代码和修改建议都会在隔离沙箱里用你的样例实际运行，并逐条对比结果。</p>
+              <p class="feature-foot">样例通过只说明你填写的情况，不等于程序完全正确。</p>
+            </li>
+            <li class="feature">
+              <span class="feature-icon fi-violet" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M9 11l3 3 8-8M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              </span>
+              <h3>可追溯的回答</h3>
+              <p>每次回答都会标明实际作答的模型、执行过程和局限说明；任务进度、失败原因与取消状态如实显示，方便你核对和复盘。</p>
+              <p class="feature-foot">回答由模型生成，可能有误，请结合教材核对。</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section-tint" aria-labelledby="how-title">
+        <div class="wrap how">
+          <div>
+            <h2 id="how-title" class="section-title">关于这次体验</h2>
+            <p class="how-lede">当前体验通过模型 API 提供服务；路由收益在独立研究评测中记录。</p>
+          </div>
+          <ul class="notes">
+            <li>
+              <strong>一次请求，一个模型</strong>
+              <span>在线体验中的学习问答由配置好的模型 API 作答，页面会显示服务商回报的实际模型名称。体验中不做多模型路由，也不展示路由收益。</span>
+            </li>
+            <li>
+              <strong>临时服务</strong>
+              <span>在线体验依赖后端服务保持在线，属于临时部署；服务离线时入口可能无法打开或无法提交，请稍后再试。</span>
+            </li>
+            <li>
+              <strong>账号与隐私</strong>
+              <span>本页面不收集任何账号或密码。如需登录，会在在线应用内完成。请不要在问题中填写个人隐私信息。</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <span>PPAI 学习工作台 · 公开预览</span>
+        <span class="muted">回答仅供学习参考</span>
+      </div>
+    </footer>
+
+    <script src="site.js" defer></script>
+  </body>
+</html>
