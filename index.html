@@ -118,12 +118,12 @@
         <div class="wrap how">
           <div>
             <h2 id="how-title" class="section-title">关于这次体验</h2>
-            <p class="how-lede">当前体验通过模型 API 提供服务；路由收益在独立研究评测中记录。</p>
+            <p class="how-lede">当前体验接入 3 个 API 模型，由 CPU 门控为每个问题选择其中一个作答；不声称相对单模型有提升。</p>
           </div>
           <ul class="notes">
             <li>
               <strong>一次请求，一个模型</strong>
-              <span>在线体验中的学习问答由配置好的模型 API 作答，页面会显示服务商回报的实际模型名称。体验中不做多模型路由，也不展示路由收益。</span>
+              <span>学习问答可在 3 个 API 模型间智能路由：CPU 门控依据新测量的能力画像选择一个模型，每个问题只调用一次；也可以固定使用基准模型对照。页面会显示服务商回报的实际模型名称。能力画像来自小规模校准题，不代表回答一定更准确。</span>
             </li>
             <li>
               <strong>临时服务</strong>
