@@ -118,12 +118,12 @@
         <div class="wrap how">
           <div>
             <h2 id="how-title" class="section-title">关于这次体验</h2>
-            <p class="how-lede">当前体验接入 4 个 API 模型，分别来自 GPT、DeepSeek、GLM 和 Claude 四个模型系列，由 CPU 门控为每个问题自动选择其中一个作答；不保证比单个模型更准确。</p>
+            <p class="how-lede">当前体验接入 4 个 API 模型，分别来自 GPT、DeepSeek、GLM 和 Claude 四个模型系列，根据语义推断的问题学科并结合实测校准结果，为每个问题选择其中一个作答；不保证比单个模型更准确。</p>
           </div>
           <ul class="notes">
             <li>
               <strong>一次请求，一个模型</strong>
-              <span>学习问答可在 GPT、DeepSeek、GLM、Claude 这 4 个 API 模型间智能路由：CPU 门控依据新测量的能力画像自动选择一个模型，每个问题只调用一次；也可以固定使用 GPT 基准模型对照。页面会显示服务商回报的实际模型名称。能力画像来自小规模校准题，不代表回答一定更准确。</span>
+              <span>学习问答可在 GPT、DeepSeek、GLM、Claude 这 4 个 API 模型间智能路由：先对问题做语义学科推断，再结合该学科的实测校准结果选择一个模型，每个问题只调用一次；也可以使用固定基准模型对照。页面会显示服务商回报的实际模型名称。校准结果来自小规模校准题，学科推断也可能有误，不代表回答一定更准确。</span>
             </li>
             <li>
               <strong>临时服务</strong>
