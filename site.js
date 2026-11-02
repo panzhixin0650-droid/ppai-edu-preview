@@ -1,4 +1,4 @@
-// 读取同目录 config.json 中的 application_url；只有合法的 HTTPS 地址才会启用“进入在线体验”。
+// 读取同目录 config.json 中的 application_url；只有合法的 HTTPS 地址才会启用“进入学习工作台”。
 // 本页不收集任何账号信息，登录只在应用本身完成。
 (function () {
   'use strict';
@@ -31,14 +31,14 @@
     cta.setAttribute('href', href);
     cta.removeAttribute('aria-disabled');
     cta.classList.remove('is-disabled');
-    note.textContent = '将打开在线应用，登录在应用内完成。体验服务为临时部署，可能暂时不可用。';
+    note.textContent = '';
   }
 
   cta.addEventListener('click', function (e) {
     if (cta.getAttribute('aria-disabled') === 'true') e.preventDefault();
   });
 
-  setDisabled('正在读取体验地址…');
+  setDisabled('正在连接…');
 
   fetch('config.json', { cache: 'no-store', credentials: 'omit' })
     .then(function (res) {
@@ -48,9 +48,9 @@
     .then(function (config) {
       var href = validAppUrl(config && config.application_url);
       if (href) setEnabled(href);
-      else setDisabled('在线体验暂未开放：尚未配置有效的 HTTPS 体验地址。');
+      else setDisabled('服务暂不可用，请稍后重试。');
     })
     .catch(function () {
-      setDisabled('暂时无法读取体验地址，请稍后刷新重试。');
+      setDisabled('暂时无法连接，请刷新重试。');
     });
 })();
