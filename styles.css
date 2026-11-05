@@ -1,4 +1,4 @@
-/* PPAI 学习工作台 · 公开预览入口。与应用一致的深靛蓝 + 青柠 + 电光蓝；无外部字体或图片。 */
+/* 问津入口。与应用一致的深靛蓝、青柠与电光蓝；无外部字体或图片。 */
 
 :root {
   --night: #14103d;
@@ -98,8 +98,10 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-weight: 750;
-  letter-spacing: 0.01em;
+  font-family: 'Songti SC', 'STSong', 'Noto Serif CJK SC', serif;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
 }
 
 .brand-mark {

@@ -1,4 +1,4 @@
-// 读取同目录 config.json 中的 application_url；只有合法的 HTTPS 地址才会启用“进入学习工作台”。
+// 读取同目录 config.json 中的 application_url；只有合法的 HTTPS 地址才会启用“进入问津”。
 // 本页不收集任何账号信息，登录只在应用本身完成。
 (function () {
   'use strict';
